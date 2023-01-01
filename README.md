@@ -1,1 +1,45 @@
 # DC31-Cloud-CTF
+
+We all love this time of year and get busy during Defcon. But we also love puzzles and competition.
+
+* [Defcon Cloud Village](https://cloud-village.org/)
+* The main ask is you would give somewhere between 4 and 8 hours on the DC31 Cloud CTF. help us get those flags.
+* You may choose to remain an "anonymous" member of the team. (We might pick a nick name for you, sorry in advance?)
+* Assume we would do this from the village itself, or we can play from a suite in the Flamingo that might be more comfortable. Playing "remote" also makes sense to maintain anonymity.
+* [@devsecfranklin](https://github.com/devsecfranklin) is a member of the #onlyfeet CTF group so we can play under that banner, unless someone has a different/better idea.
+
+## Roles
+
+Spread out the work, speed up the win. These are some suggestions.
+
+### Team Captain
+
+* The team captain would be asked to lead the creation of the write-up after the event.
+* Spend a few minutes on the web to see if there are any other useful write-ups.
+
+### SecDev (or what is a good name for this?)
+
+* Maintin our CTF container with our install scripts, cloud CLI tools, links and ref material, whatever team thinks is helpful.
+
+## Communications
+
+* There is a Discord that you will probably be asked to join, at least for the duration of the event.
+  * (Open to other ideas as well)
+* Please let the team captain know the best e-mail address for you.
+* Think about how comfortable everyone is with sharing mobile number/signal. (Or what chat app might owrk?)
+
+## Equipment
+
+* Assume you will need a laptop, charger, phone.
+* Need docker installed for tools container
+* Might need a mi-fi for the team if we are on-site playing.
+
+## Reference Material
+
+* [Andrew Liu - Defcon 30 Recon Village CTF Write-up](https://andrew.cloud/blog/dc30-writeup/)
+* [Muhammad Yuga N. - DEF CON 29 Cloud Village CTF Writeups](https://myugan.medium.com/def-con-29-cloud-village-ctf-writeups-4ebd2e2cd9c)
+* [DC30 Cloud Village Talks - YT Playlist](https://www.youtube.com/playlist?list=PL5944c_fOMYl55tjhFM866NVLKkIM3D4b)
+
+## Stretch Goals
+
+* We might try the Container CTF at DC31 as well based on time/interest.
