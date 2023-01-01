@@ -34,11 +34,12 @@ Spread out the work, speed up the win. These are some suggestions.
 * Need docker installed for tools container
 * Might need a mi-fi for the team if we are on-site playing.
 
-## Reference Material
+## Sponsorship
 
-* [Andrew Liu - Defcon 30 Recon Village CTF Write-up](https://andrew.cloud/blog/dc30-writeup/)
-* [Muhammad Yuga N. - DEF CON 29 Cloud Village CTF Writeups](https://myugan.medium.com/def-con-29-cloud-village-ctf-writeups-4ebd2e2cd9c)
-* [DC30 Cloud Village Talks - YT Playlist](https://www.youtube.com/playlist?list=PL5944c_fOMYl55tjhFM866NVLKkIM3D4b)
+We have companies that are willing to contribute money for the bills:
+
+* Github account seats
+* Public Cloud bills
 
 ## Stretch Goals
 
