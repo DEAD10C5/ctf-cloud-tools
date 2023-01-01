@@ -23,7 +23,7 @@ Spread out the work, speed up the win. These are some suggestions.
 
 ## Communications
 
-* There is a Discord that you will probably be asked to join, at least for the duration of the event. 
+* There is a Discord that you will probably be asked to join, at least for the duration of the event.
   * (Open to other ideas as well)
 * Please let the team captain know the best e-mail address for you.
 * Think about how comfortable everyone is with sharing mobile number/signal. (Or what chat app might owrk?)
