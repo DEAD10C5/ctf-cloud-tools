@@ -4,7 +4,16 @@
 
 A list of tools to checkout, maybe add to the toolbox.
 
-[kubesec](https://github.com/controlplaneio/kubesec)
+### Kubesec
+
+Scan YAML files at the command line.
+
+* [kubesec](https://github.com/controlplaneio/kubesec)
+
+```sh
+docker pull docker.io/kubesec/kubesec:v2
+docker run -i kubesec/kubesec:v2 scan /dev/stdin < YOUR_YAML_FILE.yaml
+```
 
 ## Cloud CTF Write Ups
 
