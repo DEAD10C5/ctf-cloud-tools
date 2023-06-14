@@ -1,0 +1,13 @@
+https://github.com/DrizzleRisk/NTPDoser
+https://github.com/inguardians/peirates
+https://github.com/BishopFox/cloudfox
+https://bishopfox.com/blog/aws-iam-privilege-escalation-playground
+
+
+reference stuff to review:
+https://www.youtube.com/watch?v=D4oas2wUrUA
+https://youtu.be/Izy9APT5e7I
+https://hackingthe.cloud/
+https://www.goodreads.com/book/show/54716659-how-to-hack-like-a-ghost
+https://sethsec.blogspot.com/2022/12/cloud-penetration-testing-not-your.html
+https://jadencodes.io/cloud-village-2022 <-- last years challenges
