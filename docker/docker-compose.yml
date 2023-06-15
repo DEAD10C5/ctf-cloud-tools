@@ -1,0 +1,10 @@
+version: '3'
+services:
+  only-feet-cloud-ctf-tools:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: only-feet-cloud-ctf-tools
+    container_name: only-feet-cloud-ctf-tools
+    volumes:
+      - ./:/workspaces/only-feet-cloud-ctf-tools

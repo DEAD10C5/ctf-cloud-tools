@@ -1,5 +1,5 @@
-https://github.com/DrizzleRisk/NTPDoser
-https://github.com/inguardians/peirates
+https://github.com/DrizzleRisk/NTPDoser (oops why is this in here)
+https://github.com/inguardians/peirates 
 https://github.com/BishopFox/cloudfox
 https://bishopfox.com/blog/aws-iam-privilege-escalation-playground
 
