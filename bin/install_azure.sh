@@ -4,7 +4,14 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-set -euo pipefail
-IFS=$'\n\t'
+# set -euo pipefail
+# IFS=$'\n\t'
 
-curl -L https://aka.ms/InstallAzureCli | bash
+apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo make
+
+#curl -L https://aka.ms/InstallAzureCli | bash
+pip install --upgrade pip
+pip install azure-cli
+
+# test it out
+az --version

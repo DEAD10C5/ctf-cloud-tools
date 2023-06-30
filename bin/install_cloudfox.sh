@@ -7,6 +7,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+cd /home/onlyfeet; \
 git clone https://github.com/BishopFox/cloudfox.git; \
-cd ./cloudfox; \
+cd /home/onlyfeet/cloudfox; \
 GOOS=linux GOARCH=amd64 go build .
