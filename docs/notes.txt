@@ -2,6 +2,14 @@ https://github.com/DrizzleRisk/NTPDoser (oops why is this in here)
 https://github.com/inguardians/peirates 
 https://github.com/BishopFox/cloudfox
 https://bishopfox.com/blog/aws-iam-privilege-escalation-playground
+https://github.com/RhinoSecurityLabs/cloudgoat
+https://github.com/RhinoSecurityLabs/pacu
+https://blog.xpnsec.com/azuread-connect-for-redteam/
+
+training:
+https://www.brokenazure.cloud/
+http://flaws.cloud/
+http://flaws2.cloud/
 
 
 reference stuff to review:

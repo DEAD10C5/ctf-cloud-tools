@@ -7,6 +7,10 @@ LABEL org.opencontainers.image.source = "https://github.com/DEAD10C5/ctf-dc31-cl
 LABEL org.opencontainers.image.description="DE:AD:10:C5 cloud CTF tools"
 LABEL org.opencontainers.image.licenses=GPLv2
 
+
+RUN mkdir /home/onlyfeet
+COPY . /home/onlyfeet
+
 RUN apk add --no-cache \
     tar \
     git \
@@ -27,10 +31,3 @@ RUN apk add --no-cache \
     && pip3 install --no-cache-dir \
     awscli \
     && rm -rf /var/cache/apk/*
-
-# cloudfox
-#RUN git clone https://github.com/BishopFox/cloudfox.git; \
-#    cd ./cloudfox; echo $PWD; \
-#    GOOS=linux GOARCH=amd64 go build .
-
-# peirates
