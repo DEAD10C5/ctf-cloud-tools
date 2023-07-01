@@ -18,5 +18,5 @@ docker inspect ghcr.io/devsecfranklin/only-feet-cloud-ctf-tools
 * Run the container
 
 ```sh
-docker run -it ghcr.io/devsecfranklin/only-feet-cloud-ctf-tools:latest ash
+docker run -it ghcr.io/devsecfranklin/only-feet-cloud-ctf-tools:latest ash -l
 ```
