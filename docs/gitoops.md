@@ -11,7 +11,7 @@ GitOops is a tool to help attackers and defenders identify lateral movement and 
 
 It works by mapping relationships between a GitHub organization and its CI/CD jobs and environment variables. It'll use any Bolt-compatible graph database as backend, so you can query your attack paths with openCypher:
 
-```
+```sh
 MATCH p=(:User{login:"alice"})-[*..5]->(v:EnvironmentVariable)
 WHERE v.name =~ ".*SECRET.*"
 RETURN p
