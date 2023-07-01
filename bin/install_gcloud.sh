@@ -8,5 +8,6 @@ set -euo pipefail
 IFS=$'\n\t'
 WORKDIR='/home/onlyfeet/workspace'
 
-curl https://sdk.cloud.google.com > install.sh
-bash install.sh --disable-prompts
+mkdir ${WORKDIR}/gcloud
+curl https://sdk.cloud.google.com > ${WORKDIR}/gcloud/install.sh
+bash ${WORKDIR}/gcloud/install.sh --disable-prompts

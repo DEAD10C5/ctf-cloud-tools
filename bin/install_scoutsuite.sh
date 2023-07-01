@@ -8,4 +8,20 @@ set -euo pipefail
 IFS=$'\n\t'
 WORKDIR='/home/onlyfeet/workspace'
 
-https://github.com/nccgroup/ScoutSuite.git
+function install_python() {
+  echo "installing python"
+  doas apk add --no-cache python3 py3-pip 
+  doas pip3 install --upgrade pip
+  doas rm -rf /var/cache/apk/*
+}
+
+function git_clone() {
+  cd ${WORKDIR} && git clone $1
+}
+
+function main() {
+  # cd ${WORKDIR} && git_clone https://github.com/nccgroup/ScoutSuite.git
+  # cd ${WORKDIR}/ScoutSuite
+  install_python
+  doas pip install scoutsuite
+}

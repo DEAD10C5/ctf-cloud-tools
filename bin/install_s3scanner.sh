@@ -8,15 +8,23 @@ set -euo pipefail
 IFS=$'\n\t'
 WORKDIR='/home/onlyfeet/workspace'
 
+function install_python() {
+  echo "installing python"
+  doas apk add --no-cache python3 py3-pip 
+  doas pip3 install --upgrade pip
+  doas rm -rf /var/cache/apk/*
+}
 
-doas apk add --no-cache \
-    python3 \
-    py3-pip \
-    && pip3 install --upgrade pip \
-    && pip3 install --no-cache-dir awscli \
-    && rm -rf /var/cache/apk/*
+function git_clone() {
+  cd ${WORKDIR} && git clone $1
+}
 
-cd /home/onlyfeet && git clone https://github.com/sa7mon/S3Scanner.git
-cd /home/onlyfeet/S3Scanner
-pip3 install -r /home/onlyfeet/S3Scanner/requirements.txt
-python3 -m S3Scanner
+function main() {
+  install_python
+  git_clone https://github.com/sa7mon/S3Scanner.git
+  cd ${WORKDIR}/S3Scanner
+  doas pip3 install -r ${WORKDIR}/S3Scanner/requirements.txt
+  # python3 -m S3Scanner
+}
+
+main

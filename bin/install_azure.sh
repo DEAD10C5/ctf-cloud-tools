@@ -11,8 +11,8 @@ WORKDIR='/home/onlyfeet/workspace'
 doas apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo make
 
 #curl -L https://aka.ms/InstallAzureCli | bash
-pip install --upgrade pip
-pip install azure-cli
+doas pip install --upgrade pip
+doas pip install azure-cli
 
-# test it out
+echo "test Azure CLI"
 az --version

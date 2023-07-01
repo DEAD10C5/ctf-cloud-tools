@@ -8,4 +8,13 @@ set -euo pipefail
 IFS=$'\n\t'
 WORKDIR='/home/onlyfeet/workspace'
 
-git clone https://github.com/ovotech/gitoops.git
+function git_clone() {
+  cd ${WORKDIR} && git clone $1
+}
+
+function main() {
+  cd ${WORKDIR} && git_clone https://github.com/ovotech/gitoops.git
+  cd ${WORKDIR}/gitoops && make
+}
+
+main

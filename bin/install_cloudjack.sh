@@ -8,4 +8,13 @@ set -euo pipefail
 IFS=$'\n\t'
 WORKDIR='/home/onlyfeet/workspace'
 
-https://github.com/prevade/cloudjack.git
+function git_clone() {
+  cd ${WORKDIR} && git clone $1
+}
+
+function main() {
+  cd ${WORKDIR} && git_clone https://github.com/prevade/cloudjack.git
+  # cd ${WORKDIR}/cloudjack
+}
+
+main
