@@ -3,10 +3,10 @@ Upstream-Name: ctf-dc31-cloud
 Upstream-Contact: DE:AD:10:C5 <thedevilsvoice@dead10c5.org>
 Source: github.com/DEAD10C5/ctf-dc31-cloud
 
-Files: .github/* docs/* README.md .vscode/* .whitesource
+Files: .github/* docs/* README.md .profile .vscode/* .whitesource
 Copyright: 2023, DE:AD:10:C5 <thedevilsvoice@dead10c5.org>
 License: CC-BY-SA-4.0
 
-Files: bin/* docker/* images/* test/*
+Files: bin/* docker/* images/* tests/*
 Copyright: 2023, DE:AD:10:C5 <thedevilsvoice@dead10c5.org>
 License: GPL-3.0-or-later

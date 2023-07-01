@@ -1,0 +1,12 @@
+# python
+__pycache__
+_build
+.coverage
+*.egg-info
+*.log
+*config.py
+*.egg-info
+.pytest_cache
+.tox
+MANIFEST
+htmlcov
