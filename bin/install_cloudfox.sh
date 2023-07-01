@@ -7,7 +7,11 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-cd /home/onlyfeet; \
+if [ ! -d "/home/onlyfeet/workspace" ]; then
+  mkdir /home/onlyfeet/workspace
+fi
+
+cd /home/onlyfeet/workspace; \
 git clone https://github.com/BishopFox/cloudfox.git; \
-cd /home/onlyfeet/cloudfox; \
+cd /home/onlyfeet/workspace/cloudfox; \
 GOOS=linux GOARCH=amd64 go build .

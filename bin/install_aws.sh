@@ -16,3 +16,5 @@ apk add --no-cache \
 # curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 # unzip /home/onlyfeet/awscli/awscliv2.zip
 # /home/onlyfeet/awscli/aws/install
+
+# https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html
