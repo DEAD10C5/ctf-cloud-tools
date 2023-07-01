@@ -4,4 +4,8 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+set -euo pipefail
+IFS=$'\n\t'
+WORKDIR='/home/onlyfeet/workspace'
+
 git clone https://github.com/ovotech/gitoops.git

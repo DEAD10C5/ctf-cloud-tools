@@ -1,13 +1,14 @@
 # DC31-Cloud-CTF
 
+![Logo](/images/only-feet-all-money.jpg?raw=true)
+
 We all love this time of year and get busy during Defcon. But we also love puzzles and competition.
 
 * [Defcon Cloud Village](https://cloud-village.org/)
 * The main ask is you would give somewhere between 4 and 8 hours on the DC31 Cloud CTF.
   Help us get those flags.
 * You may choose to remain an "anonymous" member of the team.
-  (We might pick a nick name for you, sorry in advance?)
-* [@devsecfranklin](https://github.com/devsecfranklin) is a member of the [#onlyfeet CTF group](https://ctftime.org/team/144644) so we can play under that banner, unless someone has a different/better idea.
+* We are playing as [#onlyfeet CTF group](https://ctftime.org/team/144644)
 
 ## Roles
 
