@@ -8,17 +8,26 @@ set -euo pipefail
 IFS=$'\n\t'
 WORKDIR='/home/onlyfeet/workspace'
 
-doas apk add --no-cache \
-python3 \
-py3-pip \
-&& pip3 install --upgrade pip \
-&& pip3 install --no-cache-dir awscli \
-&& rm -rf /var/cache/apk/*
+function install_python() {
+  echo "installing python"
+  doas apk add --no-cache python3 py3-pip 
+  doas pip3 install --upgrade pip
+  doas rm -rf /var/cache/apk/*
+}
 
-# mkdir /home/onlyfeet/awscli
-# cd /home/onlyfeet/awscli && \
-# curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-# unzip /home/onlyfeet/awscli/awscliv2.zip
-# /home/onlyfeet/awscli/aws/install
+function main() {
 
-# https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html
+  if [ ! -f "/.dockerenv" ]; then
+    echo "Not in a docker container"
+    exit 1
+  fi
+
+  install_python
+
+  doas pip3 install --no-cache-dir awscli
+  doas rm -rf /var/cache/apk/*
+
+  # https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html
+}
+
+main

@@ -8,7 +8,13 @@ set -euo pipefail
 IFS=$'\n\t'
 WORKDIR='/home/onlyfeet/workspace'
 
-cd /home/onlyfeet/workspace; \
-git clone https://github.com/BishopFox/cloudfox.git; \
-cd /home/onlyfeet/workspace/cloudfox; \
-GOOS=linux GOARCH=amd64 go build .
+function git_clone() {
+  cd ${WORKDIR} && git clone $1
+}
+
+function main() {
+  cd ${WORKDIR} && git_clone https://github.com/BishopFox/cloudfox.git
+  cd ${WORKDIR}/cloudfox && GOOS=linux GOARCH=amd64 go build .
+}
+
+main
