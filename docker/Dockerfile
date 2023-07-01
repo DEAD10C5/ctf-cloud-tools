@@ -7,10 +7,6 @@ LABEL org.opencontainers.image.source = "https://github.com/DEAD10C5/ctf-dc31-cl
 LABEL org.opencontainers.image.description="DE:AD:10:C5 cloud CTF tools"
 LABEL org.opencontainers.image.licenses=GPLv2
 
-
-RUN mkdir /home/onlyfeet
-COPY . /home/onlyfeet
-
 RUN apk add --no-cache \
     tar \
     git \
@@ -22,4 +18,22 @@ RUN apk add --no-cache \
     libc-dev\
     bash \
     && rm -rf /var/cache/apk/*
+
+RUN \
+  addgroup --gid 9001 engr && \
+  adduser \
+    --disabled-password \
+    --gecos "" \
+    --home "/home/onlyfeet" \
+    --ingroup "engr" \
+    --uid "1000" \
+    "onlyfeet"
+  
+
+RUN echo "permit nopass onlyfeet as root" >> /etc/doas.d/doas.conf
+# RUN if [ -f "/home/onlyfeet/.bash_history" ]; then chmod 666 home/onlyfeet/.bash_history; fi
+WORKDIR /home/onlyfeet
+COPY . /home/onlyfeet
+RUN chown -R onlyfeet:engr /home/onlyfeet
+USER onlyfeet
 
