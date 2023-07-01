@@ -21,17 +21,6 @@ CloudJacking video at Austin OWASP May 2018: [https://www.youtube.com/watch?v=tM
 
 1. AWS IAM access key ID and corresponding secret key
 2. AWS CLI installation configured with profile(s), access key ID(s), and secret key(s) in `~/.aws/credentials`
-
-```sh
-[default]
-aws_access_key_id=<ACCESS_KEY>
-aws_secret_access_key=<SECRET>
-
-[myprofile]
-aws_access_key_id=<ACCESS_KEY>
-aws_secret_access_key=<SECRET>
-```
-
 3. AWS IAM policy allowing Route53 ListHostedZones and ListResourceRecordSets actions
 4. AWS IAM policy allowing CloudFront ListDistributions actions
 5. Python and AWS SDK boto3 package `pip install boto3`
@@ -42,10 +31,12 @@ aws_secret_access_key=<SECRET>
 
 ## Examples
 
-- $ python cloudjack.py -o json -p default
-- $ python cloudjack.py -o text -p default
-- $ python cloudjack.py -o json -p myprofile
-- $ python cloudjack.py -o text -p myprofile
+```sh
+python cloudjack.py -o json -p default
+python cloudjack.py -o text -p default
+python cloudjack.py -o json -p myprofile
+python cloudjack.py -o text -p myprofile
+```
 
 ## Wishlist
 
