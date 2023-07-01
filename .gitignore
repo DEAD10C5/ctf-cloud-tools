@@ -10,3 +10,9 @@ _build
 .tox
 MANIFEST
 htmlcov
+
+# locals
+.ash_history
+.cache/
+.local/
+.ssh/

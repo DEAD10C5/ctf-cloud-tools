@@ -4,12 +4,16 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-apk add --no-cache \
-    python3 \
-    py3-pip \
-    && pip3 install --upgrade pip \
-    && pip3 install --no-cache-dir awscli \
-    && rm -rf /var/cache/apk/*
+set -euo pipefail
+IFS=$'\n\t'
+WORKDIR='/home/onlyfeet/workspace'
+
+doas apk add --no-cache \
+python3 \
+py3-pip \
+&& pip3 install --upgrade pip \
+&& pip3 install --no-cache-dir awscli \
+&& rm -rf /var/cache/apk/*
 
 # mkdir /home/onlyfeet/awscli
 # cd /home/onlyfeet/awscli && \
