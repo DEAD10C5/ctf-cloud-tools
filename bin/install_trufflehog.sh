@@ -12,9 +12,10 @@ function git_clone() {
   cd ${WORKDIR} && git clone $1
 }
 
+
 function main() {
-  cd ${WORKDIR} && git_clone https://github.com/BishopFox/cloudfox.git
-  cd ${WORKDIR}/cloudfox && GOOS=linux GOARCH=amd64 /usr/local/go/bin/go build .
+  cd ${WORKDIR} && git_clone https://github.com/trufflesecurity/trufflehog.git
+  cd ${WORKDIR}/trufflehog && make
 }
 
 main
