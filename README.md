@@ -1,5 +1,7 @@
 # DC31-Cloud-CTF
 
+![Logo](/images/only-feet.jpg?raw=true)
+
 ![Logo](/images/only-feet-all-money.jpg?raw=true)
 
 We all love this time of year and get busy during Defcon. But we also love puzzles and competition.
