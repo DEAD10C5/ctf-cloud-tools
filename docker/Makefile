@@ -14,4 +14,4 @@ push:
 	docker push ghcr.io/devsecfranklin/only-feet-cloud-ctf-tools:latest
 
 run: 
-	docker run -it ghcr.io/devsecfranklin/only-feet-cloud-ctf-tools:latest bash
+	docker run -it only-feet-cloud-ctf-tools ash -l

@@ -15,6 +15,15 @@ function install_python() {
   doas rm -rf /var/cache/apk/*
 }
 
+function install_lolcat() {
+  doas apk add ruby
+  doas gem install lolcat
+  doas apk del ca-certificates ruby-dev
+  doas rm -rf /usr/share/terminfo /usr/share/ca-certificates /var/cache /etc/ssl \
+    /etc/terminfo /lib/libssl.so.1.1 /lib/libcrypto.so.1.1   \
+    /usr/lib/ruby/gems/2.7.0/cache /usr/lib/ruby/2.7.0/x86_64-linux-musl/enc
+}
+
 function main() {
 
   if [ ! -f "/.dockerenv" ]; then
@@ -27,6 +36,7 @@ function main() {
   fi
 
   install_python
+  install_lolcat
 }
 
 main
