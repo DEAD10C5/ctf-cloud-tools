@@ -1,4 +1,4 @@
-# DC31-Cloud-CTF
+# Cloud CTF Tools
 
 ![Logo](/images/only-feet.jpg?raw=true)
 
