@@ -6,7 +6,7 @@ on:
   pull_request:
 jobs:
   build:
-    name: Build Cloudbot pod
+    name: build only-feet-cloud-ctf-tools
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
@@ -17,7 +17,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'ghcr.io/devsecfranklin/only-feet-cloud-ctf-tools:${{ github.sha }}'
+          image-ref: 'ghcr.io/devsecfranklin/only-feet-cloud-ctf-tools:latest'
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
