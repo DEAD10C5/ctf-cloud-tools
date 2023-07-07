@@ -1,5 +1,7 @@
 # Cloud stuff
 
+[kctf](https://google.github.io/kctf/google-cloud.html)
+
 ## Tools
 
 https://github.com/DrizzleRisk/NTPDoser (oops why is this in here)
@@ -11,9 +13,14 @@ https://blog.xpnsec.com/azuread-connect-for-redteam/
 
 ## Training
 
+https://github.com/Funkmyster/awesome-cloud-security
 https://www.brokenazure.cloud/
 http://flaws.cloud/
 http://flaws2.cloud/
+https://training.linuxfoundation.org/training/introduction-to-cilium-lfs146x/
+https://www.youtube.com/watch?v=D4oas2wUrUA
+[Cloud Scanning For Vulnerability Discovery](https://youtu.be/Izy9APT5e7I)
+https://medium.com/@glen.yu/getting-started-with-ebpf-and-cilium-on-gke-6553c5d7e02a
 
 ## Reading
 
