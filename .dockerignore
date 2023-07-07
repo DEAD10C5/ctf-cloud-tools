@@ -1,5 +1,6 @@
 .vscode/
 .whitesource
 docker/
+images/
 LICENSES/
 images/
