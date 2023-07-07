@@ -1,3 +1,6 @@
+.github/
+.git/
+.reuse/
 .vscode/
 .whitesource
 docker/
