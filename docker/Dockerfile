@@ -7,6 +7,7 @@ LABEL org.opencontainers.image.source = "https://github.com/DEAD10C5/ctf-dc31-cl
 LABEL org.opencontainers.image.description="DE:AD:10:C5 cloud CTF tools"
 LABEL org.opencontainers.image.licenses=GPLv2
 
+RUN update-ca-certificates
 RUN apk add --no-cache \
     tar \
     git \

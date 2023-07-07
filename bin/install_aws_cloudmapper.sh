@@ -6,6 +6,7 @@
 
 set -euo pipefail
 IFS=$'\n\t'
+
 WORKDIR='/home/onlyfeet/workspace'
 
 function git_clone() {
