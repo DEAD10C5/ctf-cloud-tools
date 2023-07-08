@@ -15,6 +15,7 @@ function git_clone() {
 function main() {
   cd ${WORKDIR} && git_clone https://github.com/BishopFox/cloudfox.git
   cd ${WORKDIR}/cloudfox && GOOS=linux GOARCH=amd64 /usr/local/go/bin/go build .
+  doas cp ${WORKDIR}/cloudfox/cloudfox /usr/local/bin
 }
 
 main
