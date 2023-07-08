@@ -22,7 +22,7 @@ function git_clone() {
 function main() {
   install_python
   git_clone https://github.com/salesforce/cloudsplaining.git
-  cd ${WORKDIR}/S3Scanner
+  cd ${WORKDIR}/cloudsplaining
   doas pip3 install -r ${WORKDIR}/cloudsplaining/requirements.txt
   doas pip3 install cloudsplaining
 }
