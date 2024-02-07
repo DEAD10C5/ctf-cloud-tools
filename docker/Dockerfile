@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM golang:1.20-alpine as build
+FROM golang:1.22-alpine as build
 
 LABEL maintainer="DE:AD:10:C5 <thedevilsvoice@dead10c5.org>"
 LABEL org.opencontainers.image.source = "https://github.com/DEAD10C5/ctf-dc31-cloud"
